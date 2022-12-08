@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import NavBar from "./Components/Navbar";

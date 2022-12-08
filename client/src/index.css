@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 code {
@@ -17,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
   border-bottom: 1px solid #ccc;
 }
 
@@ -24,12 +25,13 @@ header a,
 header button {
   font-size: 1rem;
   display: inline-block;
-  background-color: #fff8e7;
-  border: 1px solid salmon;
+  border-radius: 4px;
+  background-color: #e7fff6;
+  border: 1px solid rgb(114, 250, 168);
   margin: 1rem;
-  padding: 1rem;
+  padding: 5px;
   text-decoration: none;
-  color: salmon;
+  color: rgb(10, 112, 51);
   cursor: pointer;
 }
 
@@ -37,20 +39,6 @@ main {
   margin: 1rem;
 }
 
-form {
-  background-color: #fff8e7;
-  border: 1px solid salmon;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  margin: 0 auto;
-  padding: 0 1rem 1rem;
-}
-
-form input {
-  margin: 0.25rem 0;
-}
-
-form button[type="submit"] {
-  width: 40%;
+.sign{
+  text-align: center;
 }
