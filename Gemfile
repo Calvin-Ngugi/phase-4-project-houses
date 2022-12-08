@@ -15,6 +15,9 @@ gem "puma", "~> 5.0"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
+gem "active_model_serializers", "~> 0.10.12"
+
+gem 'bcrypt', '~> 3.1.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
@@ -24,7 +27,6 @@ group :development, :test do
 end
 
 group :development do
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem 'foreman', '~> 0.87'
 end
 
