@@ -7,13 +7,13 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
     end
 
     def create
-      review = Review.create(review_params)
+      review = Review.create!(review_params)
       render json: review, status: :created
     end
 
     def update
         review = Review.find_by(id: params[:id])
-        review.update(review_params)
+        review.update!(review_params)
         render json: review, status: :updated
     end
 
@@ -37,6 +37,7 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
         render json: {error: "Review not found"}, status: :not_found 
     end
 
-    def rescue_from_invalid_record
+    def rescue_from_invalid_record(e)
+        render json: {errors: e.record.errors.full_messages}, status: :unprocessable_entity 
     end
 end
