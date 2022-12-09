@@ -23,9 +23,9 @@ function Login({ setUser }) {
      <div className="container mt-5">
         <div className="row d-flex justify-content-center">
           <div className="col-md-4">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="needs-validation">
               <h3 className="sign">Login</h3>
-              <div className="mb-3 mt-3">
+              <div className="mb-3 mt-3 was-validated">
                 <label htmlFor="username">Username</label>
                 <input
                   type="username"
@@ -33,17 +33,19 @@ function Login({ setUser }) {
                   id="username"
                   autoComplete="off"
                   placeholder="Enter Username"
+                  required
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
-              <div className="mb-3">
+              <div className="mb-3 was-validated">
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
                   className="form-control"
                   id="password"
                   name="password"
+                  required
                   placeholder="Enter password"
                   autoComplete="current-password"
                   value={password}

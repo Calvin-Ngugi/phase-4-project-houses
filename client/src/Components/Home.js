@@ -1,8 +1,15 @@
 function Home({ user }) {
     if (user) {
-      return <h1>Welcome, {user.username}!</h1>;
+      return (
+      <>
+      <div className="container"> 
+        <h2>Welcome, {user.username}, and find</h2>
+        <h2>yourself a house to build a home</h2>
+      </div>
+      </>
+      );
     } else {
-      return <h1>Please Login or Sign Up</h1>;
+      return <h2>Please Login or Sign Up</h2>;
     }
   }
   
