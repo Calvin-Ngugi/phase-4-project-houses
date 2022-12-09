@@ -1,10 +1,12 @@
 import React from "react"
+import "./About.css"
+
 
 const About = () => {
   return (
     <>
       <section className='about'>
-        <div name='About Us' title='About Us - Who We Are?' cover={img} />
+        <div name='About Us' title='About Us - Who We Are?'/>
         <div className='container flex mtop'>
           <div className='left row'>
             <h1>Our Agency Story</h1>
