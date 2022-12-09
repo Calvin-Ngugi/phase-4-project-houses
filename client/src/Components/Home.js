@@ -16,7 +16,7 @@ function Home({ user }) {
   if (user) {
     return (
       <>
-        <div className="container">
+        <div className="container bg-green-900">
           <div className="w-20 bg-black text-white text-center">
             <h2 className="pt-4">Welcome, {user.username}, and find</h2>
             <h2 className="pb-4">yourself a house to build a home</h2>
