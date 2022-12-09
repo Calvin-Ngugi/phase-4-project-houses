@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 function Home({ user }) {
     if (user) {
       return (
@@ -9,7 +10,8 @@ function Home({ user }) {
       </>
       );
     } else {
-      return <h2>Please Login or Sign Up</h2>;
+      // <h2>Please Login or Sign Up</h2>;
+      return  <Footer/>
     }
   }
   

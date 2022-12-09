@@ -7,6 +7,7 @@ import Login from "./Components/Login";
 import NavBar from "./Components/Navbar";
 import Home from "./Components/Home";
 
+
 function App() {
   const [user, setUser] = useState(null);
 
