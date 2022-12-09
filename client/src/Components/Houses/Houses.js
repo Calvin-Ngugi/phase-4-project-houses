@@ -1,11 +1,11 @@
 import React from 'react'
 import HousesCard from './HousesCard';
 
-const Houses = ({house}) => {
-    const displayCards = house.map((house) => (
+const Houses = ({houses}) => {
+    const displayCards = houses.map((houses) => (
         <HousesCard
-          key={house.id}
-          house={house}
+          key={houses.id}
+          houses={houses}
         />
       ));
   return (

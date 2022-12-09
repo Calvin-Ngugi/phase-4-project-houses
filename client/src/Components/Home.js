@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Houses from "./Houses/Houses";
 
 function Home({ user }) {
-  const [house, setHouses] = useState([]);
+  const [houses, setHouses] = useState([]);
 
   useEffect(() => {
     fetch(`/houses`)
@@ -19,7 +19,7 @@ function Home({ user }) {
         <div className="container">
           <h2>Welcome, {user.username}, and find</h2>
           <h2>yourself a house to build a home</h2>
-          <Houses house={house}/>
+          <Houses houses={houses}/>
         </div>
       </>
     );

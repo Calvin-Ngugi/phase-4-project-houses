@@ -1,29 +1,29 @@
 import React from 'react'
-import { BrowserRouter as Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
-const HousesCard = ({house}) => {
+const HousesCard = ({houses}) => {
 
   return (
     <>
       <div className="col">
         <div className="card h-100">
           <img
-            src={house.image_url}
+            src={houses.image_url}
             className="card-img-top"
             alt="..."
             height={330}
           />
           <div className="card-body">
-            <h4 className="card-title">{house.name}</h4>
+            <h4 className="card-title">{houses.name}</h4>
             <small className="text-muted">House to Let</small>
-            <div className="card-text">{house.avg_score}</div>
-            <p className="card-text">ksh {house.price}/=</p>
+            <div className="card-text">{houses.avg_score}</div>
+            <p className="card-text">ksh {houses.price}/=</p>
             <div className="card-button row d-flex justify-content-between">
               <button 
                 className="btn btn-success ms-2 mb-1 justify-content-center"
                 style={{ width: "180px" }}
               >
-                <Link to={"/houses/" + house.id} >View House</Link>
+                <Link to={"/houses/" + houses.id} className="link" >View House</Link>
               </button>
             </div>
           </div>

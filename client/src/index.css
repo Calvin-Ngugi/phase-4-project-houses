@@ -46,3 +46,12 @@ main {
 .Formfield{
   margin-bottom: 12px;
 }
+
+.link{
+  color: #ddd;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #fff;
+}

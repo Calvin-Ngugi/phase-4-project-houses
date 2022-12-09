@@ -6,6 +6,7 @@ import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import NavBar from "./Components/Navbar";
 import Home from "./Components/Home";
+import House from "./Components/House/House";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,8 +26,11 @@ function App() {
       <main>
         {user ? (
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home user={user}/>
+            </Route>
+            <Route path="/houses/:id">
+              <House/>
             </Route>
           </Switch>
         ) : (
