@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import Houses from "./Houses/Houses";
 
+// const inline = {
+//   display: "flex",
+//   text: "900px"
+// }
+
+
 function Home({ user }) {
   const [house, setHouses] = useState([]);
 
@@ -26,7 +32,22 @@ function Home({ user }) {
       </>
     );
   } else {
-    return <h2>Please Login or Sign Up</h2>;
+    return (
+      <>
+        <div>
+          <div className="text-center">
+            <h1>Choose us Everyday!</h1>
+            <p className="pt-5 mb-20 text-4xl">OasisHomes is an exclusive chic estate of contemporary more than one </p>
+            <p className="text-2xl">bedroom apartments sitting on 12 acres at the heart of Nairobi. The cool balconies, </p>
+            <p>glass railings and floor to ceiling double-leaf doors make most of the homes’ spectacular </p>
+            <p>panoramic views to the park and the community’s expansive outdoor amenities </p>
+            <p>which are close by. Each apartment boasts of calming natural palettes and a modern kitchen </p>
+            <p className="text-5xl">giving a lovely and quality indoor experience.</p>
+            <h2 className="font-extrabold">Please Login or Sign Up</h2>
+          </div>
+        </div>
+      </>
+    );
   }
 }
 
