@@ -7,7 +7,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :rescue_from_not_found_record
 
     def show
         house = House.find(params[:id])
-        render json: house, status: :ok
+        render json: house, serializer: SingleSerializer
     end
 
     private

@@ -7,7 +7,7 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
     end
 
     def create
-      review = Review.create!(review_params)
+      review = house.reviews.create!(review_params)
       render json: review, status: :created
     end
 
@@ -20,7 +20,7 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
     def destroy 
         review = Review.find_by(id: params[:id])
         review.destroy
-        head: no_content
+        head :no_content
     end
 
     def show
@@ -39,5 +39,9 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
 
     def rescue_from_invalid_record(e)
         render json: {errors: e.record.errors.full_messages}, status: :unprocessable_entity 
+    end
+
+    def house
+        @house ||= House.find(params[:house_id])
     end
 end

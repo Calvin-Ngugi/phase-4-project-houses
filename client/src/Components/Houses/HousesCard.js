@@ -23,7 +23,7 @@ const HousesCard = ({houses}) => {
                 className="btn btn-success ms-2 mb-1 justify-content-center"
                 style={{ width: "180px" }}
               >
-                <Link to={"/houses/" + houses.id} className="link" >View House</Link>
+                <Link to={`/houses/${houses.id}`} className="link" >View House</Link>
               </button>
             </div>
           </div>

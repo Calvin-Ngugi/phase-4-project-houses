@@ -1,17 +1,7 @@
-import { useEffect, useState } from "react";
+import React from'react';
 import Houses from "./Houses/Houses";
 
-function Home({ user }) {
-  const [houses, setHouses] = useState([]);
-
-  useEffect(() => {
-    fetch(`/houses`)
-      .then((res) => res.json())
-      .then((houseInfo) => {
-        setHouses(houseInfo);
-      });
-  }, []);
-
+function Home({ user, houses}) {
 
   if (user) {
     return (

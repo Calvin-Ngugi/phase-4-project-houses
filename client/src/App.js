@@ -10,7 +10,10 @@ import House from "./Components/House/House";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [houses, setHouses] = useState([]);
 
+  // console.log(houses);
+  // console.log(user);
   useEffect(() => {
     // auto-login
     fetch("/me").then((r) => {
@@ -20,6 +23,15 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    fetch(`/houses`)
+      .then((res) => res.json())
+      .then((houseInfo) => {
+        // console.log(houseInfo);
+        setHouses(houseInfo);
+      });
+  }, []);
+
   return (
     <>
       <NavBar user={user} setUser={setUser} />
@@ -27,10 +39,10 @@ function App() {
         {user ? (
           <Switch>
             <Route exact path="/">
-              <Home user={user}/>
+              <Home user={user} houses={houses} setHouses={setHouses} />
             </Route>
             <Route path="/houses/:id">
-              <House/>
+              <House user={user}/>
             </Route>
           </Switch>
         ) : (
