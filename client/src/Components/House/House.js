@@ -4,6 +4,7 @@ import ReviewForm from "./ReviewForm";
 import styled from "styled-components";
 import Header from "./Header";
 import { useParams } from "react-router-dom";
+import Review from "./Review";
 
 const Wrapper = styled.section`
   max-width: 100%;
@@ -17,10 +18,10 @@ const Column = styled.div`
   max-width: 50%;
   width: 50%;
   float: left; 
-  height: 100vh;
   overflow-x: scroll;
   overflow-y: scroll; 
   overflow: scroll;
+  height: 91vh;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -90,6 +91,20 @@ const House = ({user}) => {
     setReview({ ...review, score })
   }
 
+  let userReviews
+  // let total, average = 0;
+
+  if (loading && house.reviews) {
+    userReviews = reviews.map( (rev) => {
+      return (
+        <Review 
+          key={rev.id}
+          review={rev}
+        />
+      )
+    })
+  }
+
   return (
     <Wrapper>
       {
@@ -101,6 +116,9 @@ const House = ({user}) => {
         house={house} 
         reviews={reviews} 
         />
+        <h2>Reviews</h2>
+        {userReviews}
+        <br />
       </Main>
       </Column>
       <Column>
