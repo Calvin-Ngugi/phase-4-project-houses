@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from '../Rating'
 
 const Review = ({review}) => {
   return (
@@ -14,7 +15,7 @@ const Review = ({review}) => {
             </h5>
         <p className='card-text'>{review.description}</p>
         <div className='rating-con'>
-            <div className='rating-box'>{review.score}</div>
+            <Rating score={review.score}/>
         </div>
         </div>
     </div>

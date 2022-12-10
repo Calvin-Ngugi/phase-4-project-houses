@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Rating from '../Rating/Rating'
+import Rating from '../Rating'
 
 const Wrapper = styled.div`
   padding: 50px 100px 50px 0px;
@@ -38,7 +38,7 @@ const Header = ({house, reviews}) => {
         <UserReviewCount>
           <span className="review-count">{reviews ? reviews.length : 0}</span> user reviews
         </UserReviewCount>
-        <small className='text-muted'>{house.avg_score}</small> 
+        <Rating score={house.avg_score}/> 
         <ScoreOutOf>3 out of 5 stars</ScoreOutOf>       
       </div>
     </Wrapper>
