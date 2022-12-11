@@ -8,7 +8,6 @@ import Review from "./Review";
 
 const Wrapper = styled.section`
   max-width: 100%;
-  margin-top: -14px;
   padding-left: 16px;
   display: flex;
 `;

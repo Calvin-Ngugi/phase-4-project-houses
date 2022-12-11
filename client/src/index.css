@@ -39,10 +39,6 @@ header button {
   cursor: pointer;
 }
 
-main {
-  margin: 1rem;
-}
-
 .sign{
   text-align: center;
 }
@@ -62,7 +58,6 @@ main {
 
 footer{
   width: 100%;
-  position: absolute;
   bottom: 0;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
@@ -93,21 +88,21 @@ footer{
   border-bottom: 1px solid #ccc;
   margin: 20px 0;
 }
-ul li{
+.footer_col ul li{
   list-style: none;
   margin-bottom: 12px; 
 }
-ul li a{
+.footer_col ul li a{
   text-decoration: none;
   color: #fff;
 }
-form{
+.footer_col form{
   padding-bottom: 15px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
 }
-form input{
+.footer_col form input{
   width: 100%;
   background: #fff;
   color:#000;
@@ -115,7 +110,7 @@ form input{
   outline: none;
   border-radius: 5px;
 }
-form button{
+.footer_col form button{
   background: #38f2e0;
   border-radius: 5px;
   outline: none;
