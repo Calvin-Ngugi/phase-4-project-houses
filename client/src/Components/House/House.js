@@ -47,7 +47,7 @@ const House = ({user}) => {
   const [loading, setLoading] = useState(false);
 
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   useEffect(() => {
     fetch(`/houses/${id}`)
@@ -92,7 +92,6 @@ const House = ({user}) => {
   }
 
   let userReviews
-  // let total, average = 0;
 
   if (loading && house.reviews) {
     userReviews = reviews.map( (rev) => {
@@ -100,6 +99,9 @@ const House = ({user}) => {
         <Review 
           key={rev.id}
           review={rev}
+          reviews={reviews}
+          setReviews={setReviews}
+          setLoading={setLoading}
         />
       )
     })

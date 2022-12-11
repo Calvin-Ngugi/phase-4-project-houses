@@ -18,7 +18,7 @@ rescue_from ActiveRecord::RecordInvalid, with:  :rescue_from_invalid_record
     end
 
     def destroy 
-        review = Review.find_by(id: params[:id])
+        review = Review.find(params[:id])
         review.destroy
         head :no_content
     end

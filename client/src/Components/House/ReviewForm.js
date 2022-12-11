@@ -85,7 +85,7 @@ const ReviewWrapper = styled.div`
   border-radius: 0;
   padding-bottom:80px;
   border-left: 1px solid rgba(0,0,0,0.1);
-  height: 100vh;
+  height: 80vh;
   padding-top: 100px;
   background: black;
   padding-right: 80px;
@@ -129,10 +129,10 @@ const ReviewForm = (props) =>{
       <form onSubmit={props.handleSubmit}>
         <ReviewHeadline>Share your thoughts on the {props.name}? Add Your Review!</ReviewHeadline>
         <Field>
-          <input onChange={props.handleChange} type="text" name="title" placeholder="Review Title" value={props.review.title}/>
+          <input onChange={props.handleChange} type="text" name="title" placeholder="Review Title" value={props.review.title} required/>
         </Field>
         <Field>
-          <input onChange={props.handleChange} type="text" name="description" placeholder="Review Description" value={props.review.description}/>
+          <input onChange={props.handleChange} type="text" name="description" placeholder="Review Description" value={props.review.description} required/>
         </Field>
         <Field>
           <RatingContainer>

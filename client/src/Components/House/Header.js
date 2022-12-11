@@ -39,7 +39,7 @@ const Header = ({house, reviews}) => {
           <span className="review-count">{reviews ? reviews.length : 0}</span> user reviews
         </UserReviewCount>
         <Rating score={house.avg_score}/> 
-        <ScoreOutOf>3 out of 5 stars</ScoreOutOf>       
+        <ScoreOutOf>{house.avg_score.toFixed(1)} out of 5 stars</ScoreOutOf>       
       </div>
     </Wrapper>
   ) 
