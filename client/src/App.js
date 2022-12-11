@@ -7,6 +7,9 @@ import Login from "./Components/Login";
 import NavBar from "./Components/Navbar";
 import Home from "./Components/Home";
 import House from "./Components/House/House";
+import About from "./Components/About/About"
+import Footer from "./Components/Footer";
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -44,6 +47,9 @@ function App() {
             <Route path="/houses/:id">
               <House user={user}/>
             </Route>
+            <Route path="/about">
+              <About />
+            </Route>
           </Switch>
         ) : (
           <Switch>
@@ -59,6 +65,7 @@ function App() {
           </Switch>
         )}
       </main>
+      <Footer/>
     </>
   );
 }

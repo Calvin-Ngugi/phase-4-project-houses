@@ -15,7 +15,7 @@ function Home({ user, houses }) {
           <Houses houses={houses}/>
         </div>
       </>
-    );
+      );
   } else {
     return (
       <>
