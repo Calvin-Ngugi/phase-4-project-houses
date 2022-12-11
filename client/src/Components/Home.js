@@ -38,7 +38,7 @@ function Home({ user }) {
           <div className="text-center">
             <h1>Choose us Everyday!</h1>
             <p className="pt-5 mb-20 text-4xl">OasisHomes is an exclusive chic estate of contemporary more than one </p>
-            <p className="text-2xl">bedroom apartments sitting on 12 acres at the heart of Nairobi. The cool balconies, </p>
+            <p className="text-5xl">bedroom apartments sitting on 12 acres at the heart of Nairobi. The cool balconies, </p>
             <p>glass railings and floor to ceiling double-leaf doors make most of the homes’ spectacular </p>
             <p>panoramic views to the park and the community’s expansive outdoor amenities </p>
             <p>which are close by. Each apartment boasts of calming natural palettes and a modern kitchen </p>
