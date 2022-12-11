@@ -6,6 +6,8 @@ import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import NavBar from "./Components/Navbar";
 import Home from "./Components/Home";
+import About from "./Components/About/About"
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -26,8 +28,11 @@ function App() {
       <main>
         {user ? (
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home user={user}/>
+            </Route>
+            <Route path="/about">
+              <About />
             </Route>
           </Switch>
         ) : (
@@ -44,6 +49,7 @@ function App() {
           </Switch>
         )}
       </main>
+      <Footer/>
     </>
   );
 }

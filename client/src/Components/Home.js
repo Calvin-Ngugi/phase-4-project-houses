@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import Houses from "./Houses/Houses";
 
@@ -28,7 +27,7 @@ function Home({ user }) {
     return (
       <>
         <h2>Please Login or Sign Up</h2>
-        <Footer/>
+        
       </>
     )
   }
