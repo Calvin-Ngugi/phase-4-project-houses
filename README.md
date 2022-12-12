@@ -1,10 +1,10 @@
 # OASIS HOMES
 ## AUTHORS
--Sammy Chesire https://github.com/Sammychesire
-2.Calvin Ngugi
-3.Beryl Odipoh
-4.Mike Mugendi
-5.Levin Dieto
+- Sammy Chesire https://github.com/Sammychesire
+- Calvin Ngugi  https://github.com/Calvin-Ngugi 
+- Beryl Odipoh  https://github.com/Bodipoh
+- Mike Mugendi  https://github.com/ManyweleMike
+- Levin Dieto   https://github.com/levin-achieng-dieto
 
 ## PROJECT DESCRIPTION
 Oasis homes enables a user to view all houses available for sale in the estate at the comfort of their own phone/laptop. Once a user is logged in ,they can view all available houses . The user can also view an individual house and create a review for the house.
