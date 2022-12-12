@@ -7,12 +7,13 @@
 5.Levin Dieto
 
 ## PROJECT DESCRIPTION
-
+Oasis homes enables a user to view all houses available for sale in the estate at the comfort of their own phone/laptop. Once a user is logged in ,they can view all available houses . The user can also view an individual house and create a review for the house.
 ## Technologies used
 - HTML
 - CSS
 - JS
-- GIT
+- React
+- ruby on rails
 
 ## SETUP INSTRUCTIONS
 If you want to contribute go a head and fork and clone
