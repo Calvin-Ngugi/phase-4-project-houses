@@ -1,6 +1,6 @@
 # OASIS HOMES
 ## AUTHORS
-1.Sammy Chesire
+-Sammy Chesire https://github.com/Sammychesire
 2.Calvin Ngugi
 3.Beryl Odipoh
 4.Mike Mugendi
